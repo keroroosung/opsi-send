@@ -1,0 +1,28 @@
+{
+  "name": "opsi-send-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-myconnection": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "mysql": "^2.18.1",
+    "node-cron": "^3.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
