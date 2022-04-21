@@ -20,13 +20,18 @@ app.use(myConnection(mysql, config.dbHis, 'pool',))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json({ type: '*/*' }))
 
+axios.post('http://localhost:' + PORT + '/api/opsi/createVisit', {
+}).then(rs => {
+    console.log(rs.data);
+}
+).catch(err => err);
 
 cron.schedule('0 0 */1 * * *', function () {
     axios.post('http://localhost:' + PORT + '/api/opsi/createVisit', {
     }).then(rs => {
         console.log(rs.data);
     }
-    ).catch(err =>err);
+    ).catch(err => err);
 
 });
 
